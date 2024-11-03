@@ -78,24 +78,22 @@
   </main>
 
   <script>
-      const schedule = [
+       const schedule = [
           { start: "04:30 AM", end: "05:30 AM", activity: "Fajr Prayer", details: "Morning prayer" },
-          { start: "05:30 AM", end: "06:00 AM", activity: "Exercise", details: "Jogging or light workout" },
-          { start: "06:00 AM", end: "06:30 AM", activity: "Shower", details: "Freshen up" },
-          { start: "12:30 PM", end: "02:00 PM", activity: "Work", details: "Focus on projects" },
-          { start: "02:00 PM", end: "02:15 PM", activity: "Dhuhr Prayer", details: "Noon prayer" },
+          { start: "05:30 AM", end: "06:30 AM", activity: "Morning Activity", details: "Exercise > Freshen up" },
+          { start: "06:30 PM", end: "12:30 PM", activity: "Work", details: "Focus on projects" },
+          { start: "12:30 PM", end: "02:00 PM", activity: "Dhuhr Prayer", details: "Noon prayer > Lunch" },
           { start: "02:15 PM", end: "04:00 PM", activity: "Study", details: "Focused study session" },
           { start: "04:00 PM", end: "04:30 PM", activity: "Asr Prayer", details: "Afternoon prayer" },
           { start: "04:30 PM", end: "05:20 PM", activity: "Outside", details: "Walking" },
           { start: "05:20 PM", end: "05:40 PM", activity: "Maghrib Prayer", details: "Evening prayer" },
           { start: "05:40 PM", end: "08:00 PM", activity: "Study", details: "Review and practice" },
           { start: "08:00 PM", end: "08:30 PM", activity: "Isha Prayer", details: "Night prayer" },
-          { start: "08:30 PM", end: "09:30 PM", activity: "Free Time", details: "Hobbies or relaxation" },
-          { start: "09:30 PM", end: "11:00 PM", activity: "Light Study", details: "Reading or revision" },
+          { start: "08:30 PM", end: "09:00 PM", activity: "Free Time", details: "Hobbies or relaxation" },
+          { start: "09:00 PM", end: "11:00 PM", activity: "Light Study", details: "Reading or revision" },
           { start: "11:00 PM", end: "11:15 PM", activity: "Wind Down", details: "Relax before bed" },
-          { start: "11:15 PM", end: "12:00 AM", activity: "Sleep", details: "Rest and recharge" }
+          { start: "11:15 PM", end: "11:30 AM", activity: "make Bed", details: "Sleep & Rest and recharge" }
       ];
-
       // Function to calculate the duration between start and end times
       function calculateDuration(start, end) {
           const startTime = new Date(`1970-01-01T${convertTo24Hour(start)}`);
